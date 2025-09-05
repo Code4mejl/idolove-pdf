@@ -4,7 +4,7 @@
 A lightweight, web-based PDF utility tool built with HTML, CSS, and JavaScript.
 It provides essential PDF functionalities like Merge, Split, and Compress without requiring any backend setup — all powered directly in the browser.
 
-🚀 Hosted on GitHub Pages → 
+🚀 Hosted on GitHub Pages → https://code4mejl.github.io/idolove-pdf/
 
 ✨ Features
 
@@ -80,4 +80,4 @@ This project is licensed under the MIT License – feel free to use, modify, and
 👤 Author
 
 Priyanka J L
-🔗 
+🔗 https://github.com/Code4mejl
