@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I DON'T HATE PDF - Core PDF Tools</title>
+    <meta name="description" content="A free, fast, and secure web application with essential tools to merge, compress, split, and delete PDF pages directly in your browser.">
+    <meta name="keywords" content="merge pdf, compress pdf, split pdf, delete pdf pages, pdf tools, free pdf editor, online pdf tools">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️‍🩹</text></svg>">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">❤️‍🩹 I DON'T HATE PDF</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#tools">All Tools</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#tools">All Tools</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>The essential tools to work with PDFs in one place.</h1>
+                <p>Free, secure, and easy to use. Merge, compress, split, and manage your PDF files directly in your browser without ever uploading them to a server.</p>
+            </div>
+        </section>
+
+        <section id="tools">
+            <div class="container">
+                <h2 class="reveal">Our PDF Tools</h2>
+                <div id="tools-grid" class="reveal">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="container reveal">
+                <div>
+                    <h2>About I DON'T HATE PDF</h2>
+                    <p>Welcome to I DON'T HATE PDF, your streamlined solution for core PDF tasks. We believe powerful tools should be simple, free, and accessible. That's why we built a focused suite of PDF utilities that run entirely within your browser. Your privacy is our top priority—your files are never uploaded, ensuring your data remains yours.</p>
+                    <h3>Our Core Tools Include:</h3>
+                    <ul>
+                        <li><strong>Merge PDF:</strong> Combine multiple PDFs into a single, organized document.</li>
+                        <li><strong>Compress PDF:</strong> Reduce file size without significant loss of quality, making it easier to share.</li>
+                        <li><strong>Split PDF:</strong> Extract specific pages from a large PDF into a new, smaller file.</li>
+                        <li><strong>Delete PDF Pages:</strong> Quickly remove unwanted pages from any PDF document.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="modal" id="tool-modal">
+        <div class="modal-content">
+            <div class="modal-main">
+                <div class="modal-header">
+                    <h2 id="modal-title">Tool Title</h2>
+                    <button class="close-btn" id="close-modal-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="drop-area" id="drop-area">
+                        <p>Drag & drop files here, or <strong>click to select</strong>.</p>
+                        <input type="file" id="file-input" hidden>
+                    </div>
+                    <div id="file-list"></div>
+                    <div class="tool-options" id="tool-options"></div>
+                    <button class="process-btn" id="process-btn" disabled>Process Files</button>
+                    <div id="output-area"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p id="loader-text">Processing...</p>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>About I DON'T HATE PDF</h4>
+                    <p>Your free, secure, client-side online PDF toolkit. We never upload your files.</p>
+                </div>
+                <div>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#tools">Merge PDF</a></li>
+                        <li><a href="#tools">Compress PDF</a></li>
+                        <li><a href="#tools">Split PDF</a></li>
+                        <li><a href="#tools">Delete Pages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>For support or inquiries, please email us at:</p>
+                    <a href="mailto:contact@idontlikepdf.example.com">contact@idontlikepdf.example.com</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 I DON'T HATE PDF. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
